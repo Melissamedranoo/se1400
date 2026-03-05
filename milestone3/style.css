@@ -1,0 +1,31 @@
+#wrapper{
+    display:grid;
+    grid-auto-rows: minman(0, auto);
+    grid-template-columns:minmax(0px, 1fr) repeat(30,minmax(0,175px)) minmax(0px,1r);
+
+}
+
+header{
+    height: 100px;
+    grid-row: 2/3; 
+    grid-column: 2/-2;
+    background-color:darkseagreen;
+}
+nav{
+    height: 50px;
+    grid-row: 3/4; 
+    grid-column: 2/-2;
+    background-color:chocolate;
+}
+main{
+    height: 380px;
+    grid-row: 4/5; 
+    grid-column: 2/-2;
+    background-color:aqua;
+}
+#hero{
+    height: 270px;
+    grid-row: 5/6; 
+    grid-column: 2/-2;
+    background-color:bisque;
+}
