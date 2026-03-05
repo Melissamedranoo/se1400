@@ -29,17 +29,3 @@ main{
     grid-column: 2/-2;
     background-color:bisque;
 }
-nav ul{
-      margin:0;
-      padding:0;
-      display:flex;
-      flex-flow: row nowrap;
-      list-style-type: none;
-}
-nav a { 
-      text-decoration: none; 
-      color:#FFFFFF;
-      padding: 1rem 0rem;
-      display: block;
-      text-align:center 
-    }
