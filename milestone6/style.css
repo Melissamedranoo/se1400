@@ -1,0 +1,102 @@
+#wrapper{
+    display: grid
+    ;grid-auto-rows: minmax(0, auto);
+    grid-template-columns:minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+
+}
+header{
+    height: auto;
+    grid-row: 1/2; 
+    grid-column: 2/-2;
+    background-color:white
+}
+
+header h1{
+    text-align: center;
+}
+#logo{
+    background-image: url(logo67.png);
+    
+    background-size: cover;
+    background-position: center;
+    grid-row:2/3 ;
+    grid-column:2/3 ;
+    position: sticky;
+    top: 0;
+    background-color: darkseagreen;
+}
+nav {
+    height: auto;
+    grid-row: 2/3; 
+    grid-column: 3/-2;
+    background-color:darkseagreen;
+    position: sticky;
+    top: 0;
+}
+nav ul{
+      margin:0;
+      padding:0;
+      display:flex;
+      flex-flow: row nowrap;
+      list-style-type: none;
+}
+nav a { 
+    text-decoration: none; 
+    color: black;
+    padding: 1rem 0rem;
+    display:block;
+    text-align: center
+}
+nav a:hover {
+    background-color: white;
+}
+nav ul li{
+    width: 100%;
+}
+#hero{
+    background-image: url(macha-spoon.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    grid-row: 3 / 4;
+    grid-column: 2 / -2;
+}
+main{
+    grid-row: 4 /5;
+    grid-column: 2 /-2;
+    height: 500px;
+    background-color: #FFFFFF;
+}
+@media only screen and (max-width: 1100px) {
+    #wrapper {
+        grid-template-columns: minmax(0px,1fr) repeat (6, minmax(0,175px))minmax(0px,1fr);
+    }
+   
+}
+@media only screen and (max-width: 900px) {
+  nav {
+    grid-column: -2/2;
+    grid-row: 2/3;
+    position: sticky;
+    background-color: darkseagreen;
+  }
+  nav ul {
+    flex-flow:column nowrap;
+  }
+  
+  
+}
+@media only screen and (max-width: 768px) {
+  nav{
+    grid-column: 1/-2;
+    grid-row: 2/3;
+    position: static;
+    background-color: darkseagreen;
+  }
+#logo {
+    display:none;
+  }
+  #hero{
+    display: none;
+  }
+}
