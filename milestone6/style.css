@@ -150,7 +150,7 @@ body{
 .flexcontainer {
     display:flex;
     color:black;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     font-size:medium;
     background-color: pink;
     align-content: center;
