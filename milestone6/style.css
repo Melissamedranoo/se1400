@@ -15,7 +15,7 @@ header h1{
     text-align: center;
 }
 #logo{
-    background-image: url(logo67.png);
+    background-image: url(images/LOGOSMM.jpg);
     
     background-size: cover;
     background-position: center;
@@ -23,13 +23,13 @@ header h1{
     grid-column:2/3 ;
     position: sticky;
     top: 0;
-    background-color: darkseagreen;
+    background-color: pink;
 }
 nav {
     height: auto;
     grid-row: 2/3; 
     grid-column: 3/-2;
-    background-color:darkseagreen;
+    background-color: pink;
     position: sticky;
     top: 0;
 }
@@ -53,19 +53,183 @@ nav a:hover {
 nav ul li{
     width: 100%;
 }
-#hero{
+#hero, #clairo, #cafe, #toys{
     background-image: url(macha-spoon.jpg);
-    height: 600px;
+    height: 400px;
     background-size: cover;
     background-position: center;
     grid-row: 3 / 4;
     grid-column: 2 / -2;
 }
+#hero h2 {
+    margin: auto;
+    margin: 200px;
+    margin-top: 100px;
+    margin-left: 75px;
+    color: white;
+    font-size: 4rem;
+}
+#toys{
+    background-image: url(images/timo-struker-skeqKWgZq8E-unsplash.jpg);
+}
+#clairo {
+    background-image:url(images/clairo.jpg);
+}
+#cafe {
+    background-image: url(images/pexels-d-ng-nhan-324384-12570668.jpg);
+}
+.information {
+    height:100px;
+    background-color: pink;
+    grid-row: 7/8;
+    grid-column: 2/-2;
+  
+}
+
+
 main{
     grid-row: 4 /5;
     grid-column: 2 /-2;
+    height: auto;
+    background-color: white;
+    color: black;
+    padding:40px;
+    font-size: larger;
+}
+main p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+main h1{
+    color: black;
+}
+main img{
     height: 500px;
-    background-color: #FFFFFF;
+    padding: 10px 10px 10px;
+    padding-left: 0px;
+}
+.musiccontainer img{ /* doesnt work */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;;
+    height:auto;
+    align-self: center;
+    margin:auto;
+    width: 300px;
+    flex-direction: row;
+    
+    
+}
+.musiccontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+table {
+    text-align: center;
+    vertical-align: middle;
+}
+tr:nth-child(1) th:nth-child(2) img {
+    width: auto;
+    height: 530px;
+}
+table tr td{
+    font-size: x-large;
+}
+.imagecontainer table {
+    text-align: center;
+   margin: auto;
+   font-size: xx-large;
+   border: 5px solid black;
+}
+body{
+    background-image: linear-gradient(to bottom, white, darkseagreen  );
+}
+.flexcontainer {
+    display:flex;
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:medium;
+    background-color: pink;
+    align-content: center;
+    flex-direction:row;
+    margin: auto;
+    width:970px;
+    align-items: center;
+    gap:10px;
+
+}
+.flexcontainer .flexbox img {
+    width: 200px;
+    height: 200px;
+
+}
+.flexbox img {
+    margin-left: 29px;
+    padding-top: 30px;
+}
+.textcontainer {
+    grid-row: 5 / 6;
+    grid-column: 2 / -2;
+    background-color: white;
+    color: black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 40px 40px 40px;
+    align-self: center;
+    flex-direction: column;
+    width: 970px;
+    flex-flow: center;
+    align-items: center;
+    
+}
+.flexbox {
+    background-color: white;
+    display: flex;
+    align-content:center;
+    flex-direction: column;
+    padding-left:30px;
+    padding-right: 5px;
+    height: 480px;
+    width: 280px;
+   
+   
+}
+.flexbox h3 {
+    margin-bottom: -10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.button {
+    background-color: pink;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding:10px;
+    padding-right: 30px;
+    margin-right: 95px;
+    color:white;
+    margin-left: 55px;
+    width: 100px;
+}
+.gallerycontainer {
+    display:flex;
+    flex-wrap:wrap;
+    gap: 1rem;
+    align-items: stretch;
+    height: auto;
+    align-self: center;
+    margin:auto;
+}
+.gallerycontainer img{
+    height:300px;
+    margin-top: 10px;
+
+}
+.porkcontainer img{
+    width: 975px;
+    height: auto;
+
 }
 @media only screen and (max-width: 1100px) {
     #wrapper {
