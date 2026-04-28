@@ -175,7 +175,7 @@ body{
     grid-column: 2 / -2;
     background-color: white;
     color: black;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     padding: 40px 40px 40px;
     align-self: center;
     flex-direction: column;
