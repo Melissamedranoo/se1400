@@ -53,7 +53,7 @@ nav a:hover {
 nav ul li{
     width: 100%;
 }
-#hero, #clairo, #cafe, #toys{
+#hero, #clairo, #cafe, #toys, #me{
     background-image: url(macha-spoon.jpg);
     height: 400px;
     background-size: cover;
@@ -61,6 +61,7 @@ nav ul li{
     grid-row: 3 / 4;
     grid-column: 2 / -2;
 }
+
 #hero h2 {
     margin: auto;
     margin: 200px;
@@ -68,6 +69,18 @@ nav ul li{
     margin-left: 75px;
     color: white;
     font-size: 4rem;
+}
+#me h1 {
+    margin: auto;
+    margin: 200px;
+    margin-top: 100px;
+    margin-left: 75px;
+    color: black;
+    font-size: 4rem;
+}
+
+#me {
+    background-image: url(images/camille-brodard-kOAU9SG0VX8-unsplash.jpg);
 }
 #toys{
     background-image: url(images/timo-struker-skeqKWgZq8E-unsplash.jpg);
@@ -85,8 +98,6 @@ nav ul li{
     grid-column: 2/-2;
   
 }
-
-
 main{
     grid-row: 4 /5;
     grid-column: 2 /-2;
@@ -231,6 +242,31 @@ body{
     height: auto;
 
 }
+form {
+       display: grid;
+       grid-template-rows: auto;
+       grid-template-columns: 200px 1fr;
+       gap: .75rem;
+       width: 100%;
+
+    }
+    input, textarea {
+         font-size:1rem;
+         padding:10px;
+         color:black;
+         background-color:#fafafa;
+         border:none;
+         font-family: 'Times New Roman', Times, serif;
+        }
+        #mySubmit {
+      width:10rem;
+      grid-column: 2/3;
+    }
+    label {
+      padding:10x;
+      text-align: right;
+      font-family: 'Courier New', Courier, monospace;
+    }
 @media only screen and (max-width: 1100px) {
     #wrapper {
         grid-template-columns: minmax(0px,1fr) repeat (6, minmax(0,175px))minmax(0px,1fr);
@@ -242,7 +278,7 @@ body{
     grid-column: -2/2;
     grid-row: 2/3;
     position: sticky;
-    background-color: darkseagreen;
+    background-color: pink;
   }
   nav ul {
     flex-flow:column nowrap;
@@ -255,7 +291,7 @@ body{
     grid-column: 1/-2;
     grid-row: 2/3;
     position: static;
-    background-color: darkseagreen;
+    background-color: pink;
   }
 #logo {
     display:none;
